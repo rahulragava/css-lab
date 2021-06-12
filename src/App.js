@@ -1,19 +1,13 @@
-import { React, useEffect } from 'react';
+import { React } from 'react';
 import './App.css';
-import context from './core/context';
-import SampleService from './services/sample';
-import SimpleButton from './components/simpleButton';
 
-const App = () => {
-	useEffect(SampleService.sayHai, []);
-
-	return (
-		<div className="App">
-			<div>Count: { context.state.count }</div>
-			<div>{ SimpleButton() }</div>
-			<div>Refresh ID: { context.state.refreshID }</div>
-		</div>
-	);
-};
+const App = () =>
+	<div className="App">
+		<div className="box b1">1</div>
+		<div className="box b2">2</div>
+		<div className="box b3">3</div>
+		<div className="box b4">4</div>
+	</div>
+;
 
 export default App;
