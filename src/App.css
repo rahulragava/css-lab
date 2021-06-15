@@ -5,19 +5,19 @@
 }
 
 .b2{
-	background-color:green;
+	background-color:#7FBA00;
 	top: 100px;
 	left: 210px;
 }
 
 .b3{
-	background-color:blue;
+	background-color:#00A4EF;
 	top: 210px;
 	left: 100px;
 }
 
 .b4{
-	background-color:yellow;
+	background-color:#FFB900;
 	top: 210px;
 	left: 210px;
 }
@@ -27,17 +27,26 @@
 	position: absolute;
 	width: 100px;
 	height: 100px;
-	box-shadow: 100px 100px 7px -1px skyblue;
+	box-shadow: 15px 15px 5px -5px rgb(73, 169, 182);
 }
 
 .App {
 	/* background-color:skyblue; */
-	text-align: left;
 	height:100vh;
 	width:100vw;
 }
  .logo {
-	transform: rotate(10deg);
+	transform: skew(0deg,-7deg);
+ }
+
+ .circle {
+	position: absolute;
+	height:500px;
+	width:500px;
+	top: 16%;
+	left: 30%;
+	background-color:skyblue;
+	border-radius: 50%;
 
  }
 
