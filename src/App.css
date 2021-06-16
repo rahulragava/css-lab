@@ -2,14 +2,20 @@
 	background:orangered;
 	top: 100px;
 	left: 100px;
-
-
+	animation-name: scale1 ;
+	animation-duration: 6s ;
+	animation-iteration-count: 4;
+	border-radius: 20px 0px 0px 0px;
 }
 
 .b2{
 	background-color:#7FBA00;
 	top: 100px;
 	left: 210px;
+	animation-name: scale2 ;
+	animation-duration: 6s ;
+	animation-iteration-count: 4;
+	border-radius: 0px 20px 0px 0px;
 
 }
 
@@ -17,23 +23,30 @@
 	background-color:#00A4EF;
 	top: 210px;
 	left: 100px;
+	animation-name: scale3 ;
+	animation-duration: 6s ;
+	animation-iteration-count: 4;
+	border-radius: 0px 0px 0px 20px;
 }
 
 .b4{
 	background-color:#FFB900;
 	top: 210px;
 	left: 210px;
+	animation-name: scale4 ;
+	animation-duration: 6s ;
+	animation-iteration-count: 4;
+	border-radius: 0px 0px 20px 0px;
+
 }
 
 .box{
-	border: 1px solid black;
+	border: 3px solid black;
 	position: absolute;
 	width: 100px;
 	height: 100px;
 	box-shadow: 15px 15px 5px -5px rgb(73, 169, 182);
-	animation-name: scale ;
-	animation-duration: 3s ;
-	/* animation-iteration-count: 3; */
+
 }
 
 
@@ -51,11 +64,12 @@
 	height:500px;
 	width:500px;
 	top: 16%;
-	left: 30%;
+	left: 20%;
 	background-color:skyblue;
 	border-radius: 50%;
 	animation-name: emerge;
 	animation-duration: 5s;
+	animation-iteration-count: 4;
 
 
  }
@@ -67,7 +81,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
 	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
+		animation: App-logo-spin 4 20s linear;
 	}
 }
 
@@ -106,12 +120,12 @@
 	100% {top: 100px;left: 100px;}
 }
 
-@keyframes scale {
+@keyframes scale3 {
 	0%{
 		width: 0px;
 		height: 0px;
-		margin-top:50px;
-		margin-left:50px;
+		margin-top: 0px;
+		margin-left: 100px;
 	}
 
 	50%{
@@ -123,15 +137,83 @@
 	100%{
 		width: 0px;
 		height: 0px;
-		margin-top:50px;
-		margin-left:50px;
+		margin-top: 0px;
+		margin-left: 100px;
+	}
+}
+
+@keyframes scale1 {
+	0%{
+		width: 0px;
+		height: 0px;
+		margin-top: 100px;
+		margin-left: 100px;
+	}
+
+	50%{
+		width: 100px;
+		height: 100px;
+		margin-top:0px;
+		margin-left: 0px;
+	}
+	100%{
+		width: 0px;
+		height: 0px;
+		margin-top: 100px;
+		margin-left: 100px;
+	}
+}
+
+@keyframes scale2 {
+	0%{
+		width: 0px;
+		height: 0px;
+		margin-top: 100px;
+		margin-left: 0px;
+	}
+
+	50%{
+		width: 100px;
+		height: 100px;
+		margin-top:0px;
+		margin-left: 0px;
+	}
+	100%{
+		width: 0px;
+		height: 0px;
+		margin-top: 100px;
+		margin-left: 0px;
+	}
+}
+
+@keyframes scale4 {
+	0%{
+		width: 0px;
+		height: 0px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	50%{
+		width: 100px;
+		height: 100px;
+		margin-top:0px;
+		margin-left: 0px;
+	}
+	100%{
+		width: 0px;
+		height: 0px;
+		margin-top: 0px;
+		margin-left: 0px;
 	}
 }
 
 @keyframes emerge {
-	from{ border-radius: 0%;}
+	0%{ border-radius: 0%;}
 
-	to{ border-radius: 60% }
+	50%{ border-radius: 60% }
+
+	0%{ border-radius: 0%;}
 }
 
 @keyframes expand {
