@@ -1,43 +1,25 @@
 .b1{
 	background:orangered;
-	top: 100px;
-	left: 100px;
-	animation-name: scale1 ;
-	animation-duration: 6s ;
-	animation-iteration-count: 4;
-	border-radius: 20px 0px 0px 0px;
+	bottom: 300px;
+  right: 300px;
 }
 
 .b2{
 	background-color:#7FBA00;
-	top: 100px;
+	bottom: 300px;
 	left: 210px;
-	animation-name: scale2 ;
-	animation-duration: 6s ;
-	animation-iteration-count: 4;
-	border-radius: 0px 20px 0px 0px;
-
 }
 
 .b3{
 	background-color:#00A4EF;
 	top: 210px;
-	left: 100px;
-	animation-name: scale3 ;
-	animation-duration: 6s ;
-	animation-iteration-count: 4;
-	border-radius: 0px 0px 0px 20px;
+  right: 300px;
 }
 
 .b4{
 	background-color:#FFB900;
 	top: 210px;
 	left: 210px;
-	animation-name: scale4 ;
-	animation-duration: 6s ;
-	animation-iteration-count: 4;
-	border-radius: 0px 0px 20px 0px;
-
 }
 
 .box{
@@ -46,7 +28,9 @@
 	width: 100px;
 	height: 100px;
 	box-shadow: 15px 15px 5px -5px rgb(73, 169, 182);
-
+	animation-name: scale;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 
 
@@ -67,9 +51,9 @@
 	left: 20%;
 	background-color:skyblue;
 	border-radius: 50%;
-	animation-name: emerge;
+	/* animation-name: emerge;
 	animation-duration: 5s;
-	animation-iteration-count: 4;
+	animation-iteration-count: 4; */
 
 
  }
@@ -120,94 +104,23 @@
 	100% {top: 100px;left: 100px;}
 }
 
-@keyframes scale3 {
+
+
+@keyframes scale {
 	0%{
 		width: 0px;
 		height: 0px;
-		margin-top: 0px;
-		margin-left: 100px;
 	}
 
 	50%{
 		width: 100px;
 		height: 100px;
-		margin-top:0px;
-		margin-left: 0px;
 	}
 	100%{
 		width: 0px;
 		height: 0px;
-		margin-top: 0px;
-		margin-left: 100px;
 	}
 }
-
-@keyframes scale1 {
-	0%{
-		width: 0px;
-		height: 0px;
-		margin-top: 100px;
-		margin-left: 100px;
-	}
-
-	50%{
-		width: 100px;
-		height: 100px;
-		margin-top:0px;
-		margin-left: 0px;
-	}
-	100%{
-		width: 0px;
-		height: 0px;
-		margin-top: 100px;
-		margin-left: 100px;
-	}
-}
-
-@keyframes scale2 {
-	0%{
-		width: 0px;
-		height: 0px;
-		margin-top: 100px;
-		margin-left: 0px;
-	}
-
-	50%{
-		width: 100px;
-		height: 100px;
-		margin-top:0px;
-		margin-left: 0px;
-	}
-	100%{
-		width: 0px;
-		height: 0px;
-		margin-top: 100px;
-		margin-left: 0px;
-	}
-}
-
-@keyframes scale4 {
-	0%{
-		width: 0px;
-		height: 0px;
-		margin-top: 0px;
-		margin-left: 0px;
-	}
-
-	50%{
-		width: 100px;
-		height: 100px;
-		margin-top:0px;
-		margin-left: 0px;
-	}
-	100%{
-		width: 0px;
-		height: 0px;
-		margin-top: 0px;
-		margin-left: 0px;
-	}
-}
-
 @keyframes emerge {
 	0%{ border-radius: 0%;}
 
