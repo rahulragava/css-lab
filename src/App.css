@@ -1,61 +1,71 @@
 .b1{
 	background:orangered;
-	bottom: 300px;
-  right: 300px;
+	bottom: calc(50% + 2px);
+  right: calc(50% + 2px);
+	border-radius: 25%;
 }
 
 .b2{
 	background-color:#7FBA00;
-	bottom: 300px;
-	left: 210px;
+	bottom: calc(50% + 2px);
+	left: calc(50% + 2px);
+	border-radius: 25%;
 }
 
 .b3{
 	background-color:#00A4EF;
-	top: 210px;
-  right: 300px;
+	top: calc(50% + 2px);
+  right: calc(50% + 2px);
+	border-radius: 25%;
 }
 
 .b4{
 	background-color:#FFB900;
-	top: 210px;
-	left: 210px;
+	top: calc(50% + 2px);
+	left: calc(50% + 2px);
+	border-radius: 25%;
 }
 
 .box{
-	border: 3px solid black;
+	border: 1px solid black;
 	position: absolute;
-	width: 100px;
-	height: 100px;
+	width: 15%;
+	height: 15%;
 	box-shadow: 15px 15px 5px -5px rgb(73, 169, 182);
 	animation-name: scale;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
 }
 
-
 .App {
-	background-color:lightgreen;
-	height:100vh;
-	width:100vw;
+	background-color: lightgreen;
+	height: 100vh;
+	width: 100vw;
 }
- .logo {
-	transform: skew(0deg,-7deg);
+.logo {
+	width: 100%;
+	height: 100%;
+	animation: rotation infinite 4s linear ;
+	/* transform: skew(0deg,-7deg); */
  }
 
  .circle {
 	position: absolute;
-	height:500px;
-	width:500px;
-	top: 16%;
-	left: 20%;
+	height:100%;
+	width:100%;
 	background-color:skyblue;
 	border-radius: 50%;
 	/* animation-name: emerge;
 	animation-duration: 5s;
-	animation-iteration-count: 4; */
+	animation-iteration-count: infinite; */
+ }
 
-
+ .container {
+	position: absolute;
+	height:250px;
+	width:250px;
+	top: calc(50% - 125px);
+	left: calc(50% - 125px);
  }
 
 .App-logo {
@@ -92,33 +102,20 @@
 		transform: rotate(360deg);
 	}
 }
-@keyframes positionChange {
-	0% {top: 100px;left: 100px;}
-
-	25% {top: 200px;left: 300px;}
-
-	50% {top : 100px;left: 400px;}
-
-	75% {top: 400px;left: 400px;}
-
-	100% {top: 100px;left: 100px;}
-}
-
-
 
 @keyframes scale {
 	0%{
-		width: 0px;
-		height: 0px;
+		width: 0%;
+		height: 0%;
 	}
 
 	50%{
-		width: 100px;
-		height: 100px;
+		width: 20%;
+		height: 20%;
 	}
 	100%{
-		width: 0px;
-		height: 0px;
+		width: 0%;
+		height: 0%;
 	}
 }
 @keyframes emerge {
@@ -129,18 +126,20 @@
 	0%{ border-radius: 0%;}
 }
 
-@keyframes expand {
-	from{
-		width: 0px;
-		height: 0px;
-		margin-top:50px;
-		margin-left:50px;
-	}
+@keyframes rotation {
+	from {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		transform: rotate(0deg);
 
-	to{
-		width: 100px;
-		height: 100px;
-		margin-top:0px;
-		margin-left: 0px;
-	}
+	 }
+
+	to {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		transform: rotate(360deg);
+
+	 }
 }
