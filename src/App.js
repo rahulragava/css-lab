@@ -1,20 +1,14 @@
 import { React } from 'react';
 import './App.css';
+// import LogoPane from './components/logo';
+import TreasureBox from './components/treasure-box';
 
 const App = () =>
 	<div className="App">
-		<div className="container">
-			<div className="circle">
-				<div className="logo">
-					<div className="box b1"/>
-					<div className="box b2"/>
-					<div className="box b3"/>
-					<div className="box b4"/>
-				</div>
-			</div>
-		</div>
-
+		{ TreasureBox() }
 	</div>
 ;
 
 export default App;
+
+// { LogoPane() }

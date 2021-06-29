@@ -1,0 +1,26 @@
+.container-box {
+	position: absolute;
+	height: 500px;
+	width: 500px;
+	top: calc(50% - 250px);
+	left: calc(50% - 250px);
+	text-align: center;
+}
+
+.treasure-box {
+	position: absolute;
+	height: 80%;
+	width: 80%;
+	top: calc(50% - 40%);
+	left: calc(50% - 40%);
+}
+
+.one {
+	background-color:black;
+	color: rgb(128, 128, 128);
+}
+
+.two {
+	background-color: rgb(128, 128, 128);
+	color: black;
+}

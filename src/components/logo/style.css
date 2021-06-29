@@ -1,0 +1,107 @@
+.b1{
+	background:orangered;
+	bottom: calc(50% + 2px);
+  right: calc(50% + 2px);
+	border-radius: 25%;
+}
+
+.b2{
+	background-color:#7FBA00;
+	bottom: calc(50% + 2px);
+	left: calc(50% + 2px);
+	border-radius: 25%;
+}
+
+.b3{
+	background-color:#00A4EF;
+	top: calc(50% + 2px);
+  right: calc(50% + 2px);
+	border-radius: 25%;
+}
+
+.b4{
+	background-color:#FFB900;
+	top: calc(50% + 2px);
+	left: calc(50% + 2px);
+	border-radius: 25%;
+}
+
+.box{
+	border: 1px solid black;
+	position: absolute;
+	width: 15%;
+	height: 15%;
+	box-shadow: 15px 15px 5px -5px rgb(73, 169, 182);
+	animation-name: scale;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+}
+
+.logo {
+	width: 100%;
+	height: 100%;
+	animation: rotation infinite 4s linear ;
+	/* transform: skew(0deg,-7deg); */
+ }
+
+ .circle {
+	position: absolute;
+	height:100%;
+	width:100%;
+	background-color:skyblue;
+	border-radius: 50%;
+	/* animation-name: emerge;
+	animation-duration: 5s;
+	animation-iteration-count: infinite; */
+ }
+
+@keyframes scale {
+	0%{
+		width: 0%;
+		height: 0%;
+	}
+
+	50%{
+		width: 20%;
+		height: 20%;
+	}
+	100%{
+		width: 0%;
+		height: 0%;
+	}
+}
+@keyframes emerge {
+	0%{ border-radius: 0%;}
+
+	50%{ border-radius: 60% }
+
+	0%{ border-radius: 0%;}
+}
+
+@keyframes rotation {
+	from {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		transform: rotate(0deg);
+
+	 }
+
+	to {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		transform: rotate(360deg);
+
+	 }
+}
+
+.container {
+	position: absolute;
+	height:250px;
+	width:250px;
+	top: calc(50% - 125px);
+	left: calc(50% - 125px);
+ }
+
