@@ -4,7 +4,7 @@
 	width: 500px;
 	top: calc(50% - 250px);
 	left: calc(50% - 250px);
-	text-align: center;
+	font-size: 275%;
 }
 
 .treasure-box {
@@ -15,12 +15,73 @@
 	left: calc(50% - 40%);
 }
 
-.one {
-	background-color:black;
-	color: rgb(128, 128, 128);
+.text {
+	font-size: 80%;
+	top: 50%;
+	left: 50%;
+
 }
 
-.two {
+.zebra-two {
+	background-color:black;
+}
+
+.zebra-one  {
 	background-color: rgb(128, 128, 128);
-	color: black;
+}
+
+.rainbow-one {
+	background-color: hsl(0, 1%, 79%);
+}
+
+.rainbow-two {
+	background-color: rgb(216, 91, 91);
+}
+
+.rainbow-three {
+	background-color:rgb(240, 152, 21);
+}
+
+.rainbow-four {
+	background-color:rgb(175, 174, 80);
+}
+
+.rainbow-five {
+	background-color:rgb(212, 194, 28);
+}
+
+.rainbow-six {
+	background-color:rgb(166, 255, 0);
+}
+
+.rainbow-seven {
+	background-color:rgb(20, 211, 61);
+}
+
+.rainbow-eight {
+	background-color:rgb(0, 247, 255);
+}
+
+.rainbow-nine {
+	background-color:rgb(0, 38, 255);
+}
+
+.rainbow-ten {
+	background-color:rgb(119, 0, 255);
+}
+.text-style {
+	font-size: 275%;
+}
+
+.select-style {
+	position: absolute;
+	background-color: rgb(128, 128, 128);
+	top: 0%;
+	left: 50%;
+	/* height: 5%;
+	width: 10%; */
+}
+
+.multi-color {
+	background-color: rgb(20, 255, 255);
 }
