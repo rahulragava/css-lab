@@ -7,7 +7,7 @@ const selectBox = () =>
 		className="select-style"
 		name="selectBox"
 		value={ context.state.theme }
-		onChange={ (evt) => context.actions.themeSelector(evt.target.value) }
+		onChange={ (evt) => context.actions.setTheme(evt.target.value) }
 	>
 		{ context.seed.boxTheme.map((theme) =>
 			<option
