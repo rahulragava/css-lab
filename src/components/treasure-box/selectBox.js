@@ -9,7 +9,7 @@ const selectBox = () =>
 		value={ context.state.theme }
 		onChange={ (evt) => context.actions.setTheme(evt.target.value) }
 	>
-		{ context.seed.boxTheme.map((theme) =>
+		{ context.config.boxTheme.map((theme) =>
 			<option
 				key={ theme }
 				value={ theme }

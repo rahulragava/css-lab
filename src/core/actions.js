@@ -3,7 +3,7 @@ const setTheme = ({ data }) => ({
 });
 
 const actions = {
-	themeSelector: setTheme,
+	setTheme,
 };
 
 export default actions;
